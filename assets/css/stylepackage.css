@@ -1,0 +1,69 @@
+body {
+    background-color: #aeeeff; /* Sky blue */
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark grey */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff; /* White */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .underline {
+    border: 1px solid #333; /* Dark grey */
+    margin-top: 10px;
+  }
+  
+  .package-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .package {
+    width: 45%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #999; /* Light black */
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #fff, #eee); /* Gradient */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow */
+  }
+  
+  .package:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .package-heading {
+    text-align: center;
+  }
+  
+  .package-details {
+    text-align: justify;
+  }
+  
+  .book-now-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .book-now-btn:hover {
+    background-color: #0056b3; /* Dark blue */
+  }
+  

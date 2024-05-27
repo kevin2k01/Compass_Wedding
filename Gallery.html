@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Compass Wedding Company- Gallery</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+ 
+
+  <link rel="stylesheet" href="">
+  
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <link href="assets/css/style.css" rel="stylesheet">
+ 
+ <script src="assets/js/.js"></script>  
+
+ 
+
+ 
+  <style>
+    
+   /*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+} 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
+
+*, *:before, *:after{
+  box-sizing: border-box;
+  padding: 0; margin: 0;
+  font: 300 1em/1.5 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  text-decoration: none;
+  color: #111;
+}
+
+/* html, body{background: rgb(236, 240, 241);}*/
+
+  section.buttongallery{
+    min-width: 500px;
+    margin: 10% auto;
+    text-align: center;
+  }
+    a:hover{border-bottom: 1px solid #111;} 
+    h3{font-size: 2em; padding: 20px 0;}
+    
+
+    button:hover{cursor: pointer}
+    button {
+      background: transparent; outline: none;
+      position: relative;
+      border: 2px solid #111;
+      padding: 15px 50px;
+      overflow: hidden;
+    }
+
+    /*button:before (attr data-hover)*/
+    button:hover:before{opacity: 1; transform: translate(0,0);}
+    button:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+    }
+      /*button div (button text before hover)*/
+      button:hover div{opacity: 0; transform: translate(100%,0)}
+      button div{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+      }
+  </style>
+
+
+
+</head>
+
+<body>
+    <br>
+    <br>
+    <div class="container">
+
+        
+        <div class="title-box text-center">
+            <h3 class="title-a">
+              Gallery
+            </h3>
+            <p class="subtitle-a" style="font-size: 13px;">
+              Eternal love, captured beautifully; Compass Wedding Company, where moments are cherished.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        <div class="gallery">
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/Untitled-2.jpg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/013.jpg" alt="sunset behind San Francisco city skyline">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/19.jpg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/03.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/04.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/05.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/06.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/07.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/08.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/09.jpg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/10.jpg" alt="sunset behind San Francisco city skyline">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/11.jpg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/12.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/gallery/18.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+            </div>
+
+            <div class="gallery-item">
+              <img class="gallery-image" src="assets/img/gallery/15.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+          </div>
+
+          <div class="gallery-item">
+            <img class="gallery-image" src="assets/img/gallery/17.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+        </div>
+
+        <div class="gallery-item">
+          <img class="gallery-image" src="assets/img/gallery/16.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+      </div>
+
+      <div class="gallery-item">
+        <img class="gallery-image" src="assets/img/gallery/01.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+    </div>
+    
+        </div>
+    
+    </div>
+    <section class="buttongallery">
+        <button data-hover="click me!"><div><b>Contact Us</b></div></button>
+      </section>
+
+      <script>
+        // Select the button using a query selector
+        document.querySelector(".buttongallery button").addEventListener("click", function() {
+            // Redirect to index.html#contact
+            window.location.href = "index.html#contact";
+        });
+    </script>
+    
+     
+    </body>
+    </html>
