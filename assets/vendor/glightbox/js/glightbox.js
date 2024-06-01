@@ -2321,7 +2321,7 @@
         }
 
         div = null;
-        return subString + '... <a href="#" class="desc-more">' + wordBoundary + '</a>';
+        return subString + '... <a title="compass" href="#" class="desc-more">' + wordBoundary + '</a>';
       }
     }, {
       key: "descriptionEvents",

@@ -90,7 +90,7 @@ function autoReply() {
     const today = new Date();
     let message = `
         <div class="chatbox-message-item received">
-            <a href="https://wa.me/message/WX6LWVZOTMPUG1" target="_blank" class="chatbox-message-link">
+            <a title="compass" href="https://wa.me/message/WX6LWVZOTMPUG1" target="_blank" class="chatbox-message-link">
                 <span class="chatbox-message-item-text">
                     Click here to continue chatting!
                 </span>
