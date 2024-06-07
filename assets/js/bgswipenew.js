@@ -1,4 +1,4 @@
-    var images = ['url(assets/img/ona.jpg)', 'url(assets/img/thirdbg.jpg)', 'url(assets/img/bgsec.jpg)', 'url(assets/img/on2.jpg)'];
+    var images = ['url(assets/img/ona1.webp)', 'url(assets/img/thirdbg2.webp)', 'url(assets/img/bgsec2.webp)', 'url(assets/img/on22.webp)'];
     var currentIndex = 0;
     var hero = document.getElementById('hero');
 
